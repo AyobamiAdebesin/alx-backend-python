@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Reimplementing an asynchronous function; wait_n, using asyncio.Task """
 import asyncio
-
+from typing import List
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """ Executing mutliple coroutines simultaneously """
