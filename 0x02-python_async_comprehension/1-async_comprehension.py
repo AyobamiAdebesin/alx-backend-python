@@ -10,5 +10,4 @@ async_generator = __import__('0-async_generator').async_generator
 
 async def async_comprehension() -> List[float]:
     """ Use async comprehension to generate numbers and return them"""
-    numbers_arr: List[float] = [i async for i in async_generator()]
-    return numbers_arr
+    return [i async for i in async_generator()]
